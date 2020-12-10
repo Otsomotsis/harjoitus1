@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
 <title>testisivu</title>
+  
+<script>
+  var otsikkoElementti = document.getElementByName("otsikko");
+  
+  function poistaOtsikko() {
+    otsikkoElementti.remove();
+  }
+  
+  otsikkoElementti.onclick = poistaOtsikko
+   
+</script>
+  
 <body style="background-color:#123456;">
 
-<h1>Mun oma nettisivu</h1>
-<p>This is a paragraph.</p>
+<h1 id="otsikko">Mun oma nettisivu</h1>
+<p>Antti anttila on hieno mies</p>
 
 </body>
 </html>
